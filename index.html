@@ -1,0 +1,163 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+
+    .main {
+      text-align:left;
+    padding:10px
+    }
+.pricing-plan{
+  background-color: lightgrey;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 3px midnightblue;
+}
+
+.pricing-plan:hover {
+  transform: scale(1.1)
+}
+    .pricing-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+gap: 20px;
+
+    }
+
+    .plan-features {
+      list-style-type: none;
+     display: flex;
+     flex-direction: column;
+    
+    }
+
+    li {
+      padding: 5px;
+    }
+
+    .plan-button {
+      display: flex;
+      color: white;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      padding: 8px;
+      width: 100px;
+      justify-content: center;
+    margin: 20px;
+    }
+
+    .plan-button:hover {
+      transform: scale(1.1)
+    }
+
+    .button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+    .plan-title {
+font-weight: bold;
+padding: 10px;
+    }
+
+    .plan-price {
+font-weight: bold;
+font-size: 25px;
+margin: 10px;
+    }
+    /* Hint: What can you do with a media query and flexbox? */
+    @media only screen and (max-width: 600px){
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+width: 90%;
+border-radius: 20px;
+
+}
+.pricing-container {
+  gap: 40px;
+
+}
+      
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+
+  <h1>Services Available</h1>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint harum expedita voluptas minus ea similique saepe totam omnis iure dolor odio voluptatem, alias quis! Saepe aperiam quae officiis laboriosam.</p>
+  </div>
+  
+  
+  <div class="pricing-container">
+    
+    
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy Charbelle Web Development 2023</p>
+  </footer>
+
+</body>
+
+</html>
